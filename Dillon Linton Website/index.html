@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Dillon Linton's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="letter-d.png">
+  <style>
+    /* Add custom CSS styles for the enhanced design */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header,
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    header h1,
+    footer h1 {
+      margin: 0;
+    }
+
+    .icon-bar {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .icon-bar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 10px;
+      padding: 5px;
+    }
+
+    .icon-bar a:hover {
+      background-color: #555;
+    }
+
+    .icon-bar i {
+      font-size: 20px;
+    }
+
+    .dropdown-menu ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .dropdown-menu ul li {
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+    .dropdown-menu ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .dropdown-menu ul li a:hover {
+      text-decoration: underline;
+    }
+
+    #about-section,
+    #experience-section,
+    #education-section,
+    #projects-section,
+    #awards-section {
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    /* Additional styles for dark mode */
+    body.dark-mode #about-section,
+    body.dark-mode #experience-section,
+    body.dark-mode #education-section,
+    body.dark-mode #projects-section,
+    body.dark-mode #awards-section {
+      background-color: white;
+      color: #333; /* Set the text color to black in dark mode */
+    }
+
+    #about-image {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+      color: #007bff; /* Set the blue color for section titles */
+    }
+
+    #awards-section ul li,
+    #awards-section a {
+      color: #333; /* Set the text color to black for awards in dark mode */
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body class="light-mode">
+  <header>
+    <div class="icon-bar">
+      <h1>Dillon Linton's Portfolio</h1>
+      <a href="https://github.com/DillonLinton" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/dillon-linton-01920b205/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:dlinton4@students.kennesaw.edu" target="_blank"><i class="fas fa-envelope"></i></a>
+      <button id="toggleButton"><i id="toggleIcon" class="fas fa-moon"></i></button>
+    </div>
+    <div class="dropdown-menu" id="dropdown">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about_me.html">About Me</a></li>
+        <li><a href="after_college.html">After College Plan</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section id="about-section">
+    <h2>Dillon Linton</h2>
+    <p>👋 Greetings! I'm Dillon Linton, a passionate web developer and IT professional with a Bachelor of Science in IT from Kennesaw State University. Currently, I'm in the process of obtaining my CompTIA A+ Certification to further enhance my skills. Throughout my career, I've been involved in spearheading technology initiatives, managing full lifecycle projects, and utilizing business intelligence to drive success. As an IT Help Desk Technician, I've optimized workflows, improved operational efficiency, and provided exceptional customer support. My expertise in microservices and profound power platform knowledge have empowered me to devise groundbreaking solutions and automate processes, contributing to the success of the businesses I've worked with. I'm dedicated to staying up-to-date with the latest advancements in the IT industry and excited to explore new possibilities to make a positive impact. Let's connect and discuss how my skills and passion for technology can contribute to the success of your projects!</p>
+    <h3>Areas of Expertise</h3>
+    <div class="skills">
+      <div class="skill-item">
+        <h4>Business Intelligence</h4>
+        <p>As a college student with a strong focus on data analysis, I am enthusiastic about turning business insights into data-driven decision-making.</p>
+      </div>
+      <div class="skill-item">
+        <h4>Workflow Optimization</h4>
+        <p> With a proven track record, I streamline processes, optimizing efficiency with precision.</p>
+      </div>
+      <div class="skill-item">
+        <h4>Web Development</h4>
+        <p>Proficient in front-end and back-end web development, I create captivating and functional websites.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience-section">
+    <h2>Professional Experience</h2>
+    <h3>Self Employed, Kennesaw</h3>
+    <h4>Personal Trainer, Jan 2023- July 2023</h4>
+    <p>Provided individualized exercise programs, guidance, and support to clients based on their specific needs, abilities, and preferences. Trained multiple clients and provided a workout routine, diet, and hands-on training. Brought forth a self-motivated attitude, committed to helping people enhance their bodies and lives. Modified lessons for individuals when necessary, through strategic planning and execution.</p>
+    <p>Conducted weekly assessments of a client's advancements and altered following sessions as needed. Developed and implemented all fitness and nutrition programs for clients.</p>
+
+    <h3>Mr. Transmission, Decatur</h3>
+    <h4>Service Advisor, June 2021- August 2021, June 2022- Aug 2022</h4>
+    <p>Delivered exceptional customer service and achieved customer satisfaction goals by developing and implementing new customer service policies and procedures. Collaborated with cross-functional departments to ensure customer needs were met. Resolved customer complaints and escalated issues to management as necessary while managing resources to achieve work objectives on time. Created, maintained, and improved customer relationships while interacting with customers on a daily basis.</p>
+  </section>
+
+  <section id="education-section">
+    <h2>Education and Certifications</h2>
+    <p>Bachelor of Science in IT | Kennesaw State University, Kennesaw | Aug 2021- December 2023 (Graduation) | 3.72 GPA</p>
+    <p>CompTIA A+ Certification | In-Progress</p>
+    <p>Google IT Support Professional Certificate</p>
+    <p>TryHackMe top 10% out of 2 million users</p>
+  </section>
+
+  <section id="projects-section">
+    <h2>Projects Completed</h2>
+    <ul>
+      <li>Home Server Setup</li>
+      <li>Personal Website Development</li>
+      <li>Honeypot Implementation and Monitoring</li>
+    </ul>
+  </section>
+
+  <section id="awards-section">
+    <h2>Awards</h2>
+    <ul>
+      <li><a href="https://kennesaw.meritpages.com/stories/Dillon-Linton-named-to-Kennesaw-State-s-Spring-2023-President-s-List/111319598">Kennesaw State's Spring 2023 President's List</a></li>
+      <li><a href="https://kennesaw.meritpages.com/stories/Dillon-Linton-Named-to-Kennesaw-State-s-Spring-2022-Dean-s-List/84153323">Kennesaw State's Spring 2022 Dean's List</a></li>
+      <li><a href="https://kennesaw.meritpages.com/stories/Dillon-Linton-named-to-Kennesaw-State-s-Fall-2022-Dean-s-List/100276879">Kennesaw State's Fall 2022 Dean's List</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <div class="banner-bottom">
+      <p>Contact me at <a href="mailto:dlinton4@students.kennesaw.edu">dlinton4@students.kennesaw.edu</a></p>
+      <a href="#top"><i class="fas fa-arrow-up"></i> Back to Top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

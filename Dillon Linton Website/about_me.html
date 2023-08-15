@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Dillon Linton's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="letter-d.png">
+  <style>
+    /* Add custom CSS styles for the enhanced design */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header, footer {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    header h1, footer h1 {
+      margin: 0;
+    }
+
+    .icon-bar {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .icon-bar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 10px;
+      padding: 5px;
+    }
+
+    .icon-bar a:hover {
+      background-color: #555;
+    }
+
+    .icon-bar i {
+      font-size: 20px;
+    }
+
+    .dropdown-menu ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .dropdown-menu ul li {
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+    .dropdown-menu ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .dropdown-menu ul li a:hover {
+      text-decoration: underline;
+    }
+
+    #about-section {
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #333;
+      margin-bottom: 20px;
+    }
+
+    #about-section h2 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+      color: #007bff;
+    }
+
+    #about-image {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      border-radius: 5px;
+    }
+
+    #about-section h3 {
+      margin-top: 20px;
+    }
+
+    #about-section p {
+      margin-top: 10px;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Additional styles for dark mode */
+    body.dark-mode {
+      background-color: #111;
+      color: white;
+    }
+
+    body.dark-mode header,
+    body.dark-mode footer {
+      background-color: #333;
+      color: white;
+    }
+
+    body.dark-mode .icon-bar a,
+    body.dark-mode .dropdown-menu ul li a {
+      color: white;
+    }
+
+    body.dark-mode #about-section {
+      background-color: white;
+      color: white;
+    }
+
+    body.dark-mode #about-section h2,
+    body.dark-mode #experience-section h2,
+    body.dark-mode #education-section h2,
+    body.dark-mode #projects-section h2,
+    body.dark-mode #awards-section h2 {
+      color: #007bff;
+    }
+
+    body.dark-mode #about-section p,
+    body.dark-mode #about-section h3,
+    body.dark-mode #experience-section p,
+    body.dark-mode #experience-section h3,
+    body.dark-mode #education-section p,
+    body.dark-mode #education-section h3,
+    body.dark-mode #projects-section p,
+    body.dark-mode #projects-section h3,
+    body.dark-mode #awards-section p,
+    body.dark-mode #awards-section h3 {
+      color: #333;
+    }
+
+    body.dark-mode footer a {
+      color: white;
+    }
+
+  </style>
+</head>
+<body class="light-mode">
+  <header>
+    <div class="icon-bar">
+      <h1>Dillon Linton's Portfolio</h1>
+      <a href="https://github.com/DillonLinton" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/dillon-linton-01920b205/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:dlinton4@students.kennesaw.edu" target="_blank"><i class="fas fa-envelope"></i></a>
+      <button id="toggleButton"><i id="toggleIcon" class="fas fa-moon"></i></button>
+    </div>
+    <div class="dropdown-menu" id="dropdown">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about_me.html">About Me</a></li>
+        <li><a href="after_college.html">After College Plan</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section id="about-section">
+    <h2>About Me</h2>
+    <img src="ME.png" alt="Picture of Dillon Linton" id="about-image">
+    <h3>Introduction</h3>
+    <p>Hello there! My name is Dillon Linton, and I'm a 21-year-old Information Technology student at Kennesaw State University. Born in Savannah, GA, I moved to Kennesaw in 2016, where I've made my home. Outside of my academic pursuits, I enjoy lifting weights, watching the latest blockbuster movies, and spending quality time with friends. My interests also extend to exploring different cultures through international animated films. Reading is another favorite pastime of mine, allowing me to delve into various worlds and ideas. I pride myself on being outgoing and a true team player, known for working well with everyone. My passion for technology, coupled with these qualities, drives me to excel both in my studies and in life.</p>
+    <h3>My Journey in Information Technology</h3>
+    <p>My journey in Information Technology is fueled by a desire to understand how technology shapes our world and find innovative ways to apply it. Whether I'm programming, analyzing data, or working on group projects, I constantly seek to improve my skills and contribute to the field. My hands-on approach has led me to explore various projects and internships, where I've been able to translate classroom theories into practical solutions. Collaboration and creativity stand at the forefront of my approach to technology, and I believe in using it to create positive change in our community.</p>
+    <h3>Life Outside the Classroom</h3>
+    <p>Outside the classroom, I make sure to balance my life with activities that nourish both body and mind. Lifting weights is not just a hobby but a discipline that teaches me the value of hard work and persistence. The shared experience of watching movies and enjoying international animated films allows me to connect with friends and engage with storytelling in a unique way.</p>
+  </section>
+
+  <footer>
+    <div class="banner-bottom">
+      <p>Contact me at <a href="mailto:dlinton4@students.kennesaw.edu">dlinton4@students.kennesaw.edu</a></p>
+      <a href="#top"><i class="fas fa-arrow-up"></i> Back to Top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
