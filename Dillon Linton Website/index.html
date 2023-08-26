@@ -105,7 +105,7 @@
     h2 {
       border-bottom: 1px solid #ccc;
       padding-bottom: 10px;
-      color: #007bff; /* Set the blue color for section titles */
+      color: black; /* Set the blue color for section titles */
     }
 
     #awards-section ul li,
@@ -125,40 +125,92 @@
 </head>
 
 <body class="light-mode">
-  <header>
-    <div class="icon-bar">
-      <h1>Dillon Linton's Portfolio</h1>
-      <a href="https://github.com/DillonLinton" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/dillon-linton-01920b205/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:dlinton4@students.kennesaw.edu" target="_blank"><i class="fas fa-envelope"></i></a>
-      <button id="toggleButton"><i id="toggleIcon" class="fas fa-moon"></i></button>
-    </div>
-    <div class="dropdown-menu" id="dropdown">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about_me.html">About Me</a></li>
-        <li><a href="after_college.html">After College Plan</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </header>
+  <!DOCTYPE html>
+  <html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Dillon Linton's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="letter-d.png">
+    <style>
+      .btn-social {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+      }
+      .btn-social i {
+        margin-right: 0.5rem;
+      }
+      #toggleButton i {
+        margin-right: 0;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Dillon Linton's Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about_me.html">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="after_college.html">After College Plan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <a href="https://github.com/DillonLinton" class="btn btn-dark btn-social mx-2" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/dillon-linton-01920b205/" class="btn btn-dark btn-social mx-2" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="mailto:dlinton4@students.kennesaw.edu" class="btn btn-dark btn-social mx-2" target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  
+  </html>
 
   <section id="about-section">
     <h2>Dillon Linton</h2>
-    <p>👋 Greetings! I'm Dillon Linton, a passionate web developer and IT professional with a Bachelor of Science in IT from Kennesaw State University. Currently, I'm in the process of obtaining my CompTIA A+ Certification to further enhance my skills. Throughout my career, I've been involved in spearheading technology initiatives, managing full lifecycle projects, and utilizing business intelligence to drive success. As an IT Help Desk Technician, I've optimized workflows, improved operational efficiency, and provided exceptional customer support. My expertise in microservices and profound power platform knowledge have empowered me to devise groundbreaking solutions and automate processes, contributing to the success of the businesses I've worked with. I'm dedicated to staying up-to-date with the latest advancements in the IT industry and excited to explore new possibilities to make a positive impact. Let's connect and discuss how my skills and passion for technology can contribute to the success of your projects!</p>
+    <p>👋 Greetings! I'm Dillon Linton, an enthusiastic web developer and dedicated IT professional. Currently, I'm in the final stages of completing my Bachelor of Science in IT at Kennesaw State University, with an anticipated graduation date in December. Additionally, I'm actively pursuing my CompTIA A+ Certification to further bolster my skill set.
+
+      Throughout my academic and professional journey, I've been at the forefront of various tech projects, overseeing them from inception to fruition and leveraging my understanding of business dynamics to ensure their success. My experience in the field of information technology has allowed me to optimize processes, enhance operational efficiency, and deliver exceptional solutions.
+      
+      My proficiency in microservices and substantial knowledge of the power platform have enabled me to innovate by crafting effective solutions and automating tasks. These contributions have consistently played a pivotal role in driving success for the organizations I've collaborated with.
+      
+      Remaining attuned to the latest developments in the IT landscape is a priority for me, and I'm genuinely eager to explore fresh opportunities where I can make a meaningful and positive impact. I'm excited about the prospect of discussing how my skillset and unwavering passion for technology can contribute to the advancement of your projects.</p>
     <h3>Areas of Expertise</h3>
     <div class="skills">
       <div class="skill-item">
         <h4>Business Intelligence</h4>
-        <p>As a college student with a strong focus on data analysis, I am enthusiastic about turning business insights into data-driven decision-making.</p>
+        <p>As a college student  I am deeply intrigued by the worlds of coding and cybersecurity. These areas captivate my attention due to their dynamic and ever-evolving nature, presenting endless opportunities to learn, innovate, and safeguard digital landscapes.</p>
       </div>
       <div class="skill-item">
         <h4>Workflow Optimization</h4>
-        <p> With a proven track record, I streamline processes, optimizing efficiency with precision.</p>
+        <p> With a proven track record, I streamline processes, optimizing efficiency with precision – just like fine-tuning the lines of code that bring a website to life. As a college student, I understand the value of time and the need to make every effort count, much like crafting the perfect piece of code that turns a complex challenge into a smooth-running application. Just as I immerse myself in my studies, I dive into optimizing workflows, ensuring that every step is deliberate and purposeful, echoing the way I approach each coding problem with thoroughness and dedication.</p>
       </div>
       <div class="skill-item">
         <h4>Web Development</h4>
-        <p>Proficient in front-end and back-end web development, I create captivating and functional websites.</p>
+        <p>Skilled in both front-end and back-end web development, I can create websites that look great and work smoothly. Like putting together puzzle pieces, I make sure the design and code fit together perfectly to give users a seamless and enjoyable experience.</p>
       </div>
     </div>
   </section>
@@ -201,14 +253,23 @@
     </ul>
   </section>
 
-  <footer>
-    <div class="banner-bottom">
-      <p>Contact me at <a href="mailto:dlinton4@students.kennesaw.edu">dlinton4@students.kennesaw.edu</a></p>
-      <a href="#top"><i class="fas fa-arrow-up"></i> Back to Top</a>
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <h2>Dillon Linton</h2>
+          <p>&copy; 2023 Dillon Linton</p>
+        </div>
+        <div class="col-12 col-md-6 text-center text-md-end">
+          <p>Contact me at: <a href="mailto:dlinton4@students.kennesaw.edu" class="text-white">dlinton4@students.kennesaw.edu</a></p>
+        </div>
+      </div>
     </div>
   </footer>
-
-  <script src="script.js"></script>
+  <!-- Include Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Include Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

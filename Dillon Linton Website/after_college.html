@@ -4,186 +4,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>After College Plan - Dillon Linton's Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Contact - Dillon Linton's Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="icon" href="letter-d.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
-    /* Add custom CSS styles for the enhanced design */
+    .btn-social {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+
+    .btn-social i {
+      margin-right: 0.5rem;
+    }
+
+    #toggleButton i {
+      margin-right: 0;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    header,
-    footer {
-      background-color: #333;
-      color: white;
-      padding: 10px;
-      text-align: center;
-    }
-
-    header h1,
-    footer h1 {
-      margin: 0;
-    }
-
-    .icon-bar {
       display: flex;
-      align-items: center;
-      justify-content: flex-end;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
-    .icon-bar a {
-      color: white;
-      text-decoration: none;
-      margin-left: 10px;
-      padding: 5px;
-    }
-
-    .icon-bar a:hover {
-      background-color: #555;
-    }
-
-    .icon-bar i {
-      font-size: 20px;
-    }
-
-    .dropdown-menu ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    .dropdown-menu ul li {
-      display: inline-block;
-      margin-right: 15px;
-    }
-
-    .dropdown-menu ul li a {
-      color: white;
-      text-decoration: none;
-    }
-
-    .dropdown-menu ul li a:hover {
-      text-decoration: underline;
+    main {
+      flex-grow: 1;
     }
 
     .plan-section {
-      padding: 20px;
-      background-color: #f9f9f9;
-      color: #333;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-      margin-bottom: 20px;
+      padding: 2rem 0;
+      background-color: #f4f4f4;
     }
 
-    .plan-section h2 {
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 10px;
-      color: #007bff; /* Set the blue color for section titles */
+    .plan-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      border: 2px solid #333;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-    .plan-section p {
+    .textured-text {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .textured-text h2 {
+      font-size: 2.5rem;
+      font-weight: 500;
+      color: #2c3e50;
+      margin-bottom: 1rem;
+    }
+
+    .textured-text p {
+      font-size: 1.1rem;
+      font-weight: 300;
       line-height: 1.6;
-      font-size: 16px;
-      margin-bottom: 10px;
-    }
-
-    /* Additional styles for dark mode */
-    body.dark-mode .plan-section {
-      background-color: white;
-      color: #333; /* Set the text color to black in dark mode */
-    }
-
-    footer {
-      background-color: #333;
-      color: white;
-      padding: 10px;
-      text-align: center;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-    }
-
-    footer a {
-      color: white;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    /* Media query for mobile responsiveness */
-    @media screen and (max-width: 768px) {
-      header h1 {
-        font-size: 24px;
-      }
-      .icon-bar {
-        flex-direction: column;
-      }
-      .dropdown-menu {
-        display: none;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: #333;
-      }
-      .dropdown-menu ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-      }
-      .dropdown-menu ul li {
-        margin: 10px 0;
-      }
-      .dropdown-menu ul li a {
-        color: white;
-      }
-      .dropdown-menu ul li a:hover {
-        text-decoration: none;
-        color: #007bff;
-      }
-      .icon-bar a {
-        margin-left: 0;
-        padding: 10px;
-      }
-      .plan-section {
-        margin: 0;
-        border-radius: 0;
-      }
-      footer {
-        position: static;
-        margin-top: 20px;
-      }
+      color: #34495e;
     }
   </style>
 </head>
 
-<body class="light-mode">
+<body>
   <header>
-    <div class="icon-bar">
-      <h1>Dillon Linton's Portfolio</h1>
-      <a href="https://github.com/DillonLinton" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/dillon-linton-01920b205/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:dlinton4@students.kennesaw.edu" target="_blank"><i class="fas fa-envelope"></i></a>
-      <button id="toggleButton"><i id="toggleIcon" class="fas fa-moon"></i></button>
-    </div>
-    <nav id="dropdown" class="dropdown-menu">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about_me.html">About Me</a></li>
-        <li><a href="after_college.html">After College Plan</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Dillon Linton's Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about_me.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="after_college.html">After College Plan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <a href="https://github.com/DillonLinton" class="btn btn-dark btn-social mx-2" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/dillon-linton-01920b205/" class="btn btn-dark btn-social mx-2" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:dlinton4@students.kennesaw.edu" class="btn btn-dark btn-social mx-2" target="_blank"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
-
   <main>
     <section class="plan-section">
       <div class="plan-content textured-text">
@@ -196,14 +115,24 @@
     </section>
   </main>
 
-  <footer>
-    <div class="banner-bottom">
-      <p>Contact me at <a href="mailto:dlinton4@students.kennesaw.edu">dlinton4@students.kennesaw.edu</a></p>
-      <a href="#top"><i class="fas fa-arrow-up"></i> Back to Top</a>
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <h2>Dillon Linton</h2>
+          <p>&copy; 2023 Dillon Linton</p>
+        </div>
+        <div class="col-12 col-md-6 text-center text-md-end">
+          <p>Contact me at: <a href="mailto:dlinton4@students.kennesaw.edu" class="text-white">dlinton4@students.kennesaw.edu</a></p>
+        </div>
+      </div>
     </div>
   </footer>
-
-  <script src="script.js"></script>
+  <!-- Include Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Include Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

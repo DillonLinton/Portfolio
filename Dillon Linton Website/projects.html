@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Dillon Linton's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="letter-d.png">
+  <style>
+    /* Existing styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Set minimum height to fill the screen */
+    }
+
+    header,
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    header h1,
+    footer h1 {
+      margin: 0;
+    }
+
+    .icon-bar {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .icon-bar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 10px;
+      padding: 5px;
+    }
+
+    .icon-bar a:hover {
+      background-color: #555;
+    }
+
+    .icon-bar i {
+      font-size: 20px;
+    }
+
+    .dropdown-menu ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .dropdown-menu ul li {
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+    .dropdown-menu ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .dropdown-menu ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Additional styles for dark mode */
+    body.dark-mode header,
+    body.dark-mode footer {
+      background-color: #111;
+      color: white;
+    }
+
+    body.dark-mode .icon-bar a,
+    body.dark-mode .dropdown-menu ul li a {
+      color: white;
+    }
+
+    body.dark-mode section h2 {
+      color: #007bff;
+    }
+
+    body.dark-mode section {
+      background-color: white;
+      color: #333; /* Set the text color to black in dark mode */
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+
+    body.dark-mode footer a {
+      color: white;
+    }
+
+    main {
+      flex: 1; /* Expand the main content to fill available space */
+    }
+
+    footer {
+      margin-top: auto; /* Push the footer to the bottom of the page */
+    }
+
+    /* New styles for the projects section */
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding: 20px 0;
+    }
+
+    .project-card {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 300px;
+    }
+
+    .project-image {
+      width: 100%;
+    }
+
+    .project-description {
+      padding: 15px;
+      background-color: #f9f9f9;
+      text-align: center;
+      transition: background-color 0.3s;
+    }
+
+    .project-card:hover .project-description {
+      background-color: #e9e9e9;
+    }
+  </style>
+</head>
+
+<body class="light-mode">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Dillon Linton's Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about_me.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="after_college.html">After College Plan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <a href="https://github.com/DillonLinton" class="btn btn-dark btn-social mx-2" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/dillon-linton-01920b205/" class="btn btn-dark btn-social mx-2" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:dlinton4@students.kennesaw.edu" class="btn btn-dark btn-social mx-2" target="_blank"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <img src="path_to_classic_games_image.jpg" alt="Classic Games Website Image" class="project-image">
+          <div class="project-description">
+            <h3>Classic Games Website</h3>
+            <p>A website where you can play classic games like Snake, Tetris, and more. Designed with a responsive user interface for an enjoyable gaming experience on various devices.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="path_to_linkinbio_image.jpg" alt="LinkInBio Image" class="project-image">
+          <div class="project-description">
+            <h3>LinkInBio</h3>
+            <p>A platform where users can create a customizable landing page with links to their social media, portfolio, blog, or any other online presence. Simplifies the sharing of multiple links through one unique URL.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="path_to_live_chat_image.jpg" alt="Live Chat Image" class="project-image">
+          <div class="project-description">
+            <h3>Live Chat</h3>
+            <p>A real-time chat application that allows users to communicate instantly. Designed with a modern user interface for an easy and convenient chatting experience on various devices.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="path_to_appointment_booker_image.jpg" alt="Appointment Booker Image" class="project-image">
+          <div class="project-description">
+            <h3>Appointment Booker</h3>
+            <p>An online scheduling tool that allows clients to book, reschedule, or cancel appointments. Integrated with Google Calendar for automatic appointment tracking. Designed for businesses, freelancers, and professionals.</p>
+          </div>
+        </div>
+      <div class="project-card">
+        <img src="path_to_ToDoList.jpg" alt="ToDoList Image" class="project-image">
+        <div class="project-description">
+          <h3>ToDoList</h3>
+          <p>This To-Do List website is a sleek and intuitive tool that offers users an efficient way to manage their tasks and responsibilities. With a visually pleasing design and user-friendly interface, the website provides a hassle-free experience for keeping track of what needs to be done.</p>
+        </div>
+      </div>
+    </div>
+    </section>
+  </main>
+
+ <!-- Footer -->
+ <footer class="bg-dark text-white py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0">
+        <h2>Dillon Linton</h2>
+        <p>&copy; 2023 Dillon Linton</p>
+      </div>
+      <div class="col-12 col-md-6 text-center text-md-end">
+        <p>Contact me at: <a href="mailto:dlinton4@students.kennesaw.edu" class="text-white">dlinton4@students.kennesaw.edu</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Include Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Include Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
